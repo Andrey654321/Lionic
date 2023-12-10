@@ -4,7 +4,7 @@ html {
 
 *,
 *::after
-*::befor {
+*::before {
     box-sizing: inherit;
 }
 
@@ -70,7 +70,10 @@ a{
 
 .hero {
     padding: 113px 0 134px 0;
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/hero.jpeg); /* Разобраться */
+    background-repeat: no-repeat; /* Разобраться */
+    background-position: center right; /* Разобраться */
+    background-size: cover; /* Разобраться */
 }
 
 .hero__container{
