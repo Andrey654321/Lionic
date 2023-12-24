@@ -126,7 +126,7 @@ a{
     font-weight: 400;
     line-height: 17px;
     text-transform: uppercase;
-    background-image: url(../img/secure.png); /* Скопировать в svg */
+    background-image: url(../img/secure.svg); /* Скопировать в svg */
     background-repeat: no-repeat;
     background-position: left center;
 }
@@ -137,4 +137,81 @@ a{
     align-items: center;
     row-gap: 14px;
 }
-    
+
+.about__down {
+    color: #1C1C1C;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    background-image: url(../img/what-1.svg);
+}
+
+.about__downone {
+    color: #1C1C1C;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    background-image: url(../img/Group.svg);
+}
+
+.about__downtwo {
+    color: #1C1C1C;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    background-image: url(../img/Group\ \(1\).svg);
+    background-repeat: no-repeat;
+}
+
+.about__downthree {
+    color: #1C1C1C;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+    background-image: url(../img/Vector.svg);
+    background-repeat: no-repeat;
+}
+
+.about__title {
+    color: #1C1C1C;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 130%; /* 46px */
+    padding-top: 0;
+}
+
+.about__descriptiondown {
+    color: #787878;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    max-height: 63px;
+}
+
+.about__description {
+    color: #787878;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 54px;
+}
+
+.about__conteiner {
+    padding: 195px 0 62px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.about__titledown {
+    color: #1C1C1C;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%; /* 26px */
+}
