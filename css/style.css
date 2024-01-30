@@ -210,6 +210,21 @@ a{
 
 .about__down:hover {
     background-color: #3172B9;
+}
+
+.about__down:hover svg rect {
+    fill: #FFFFFF;
+}
+
+.about__down:hover svg path {
+    fill: #FFFFFF;
+}
+
+.about__down:hover p {
+    color: #FFFFFF;
+}
+
+.about__down:hover h3 {
     color: #FFFFFF;
 }
 
@@ -275,4 +290,18 @@ a{
     background: #DADADA;
     margin: 0;
     margin-top: 160px;
+}
+
+.articles__card {
+    padding: 23px 160px 38px 200px;
+    margin: 0;
+    max-width: 210px;
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+}
+
+.articles__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
