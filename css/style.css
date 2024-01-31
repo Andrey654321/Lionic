@@ -36,6 +36,7 @@ a{
     font-weight: 600;
     position: relative;
     outline: none;
+    cursor: pointer;
 }
 
 .nav__link::after {
@@ -206,6 +207,7 @@ a{
     border-radius: 5px;
     padding: 62px 30px;
     position: relative;
+    cursor: pointer;
 }
 
 .about__down:hover {
@@ -298,6 +300,52 @@ a{
     max-width: 210px;
     border-radius: 5px;
     border: 1px solid #E4E4E4;
+    position: relative;
+    cursor: pointer;
+}
+
+.articles__card::before {
+    position: absolute;
+    display: block;
+    content: "";
+    inset: 0;
+    opacity: 1;                                                                
+}
+
+.articles__card:hover {
+    background-color: #3172B9;
+}
+
+.articles__card:hover h5 {
+    color: #FFFFFF;
+}
+
+.articles__card:hover p {
+    color: #FFFFFF;
+}
+
+.articles__card:focus-visible::before {
+    background-color: #71A7E2;
+}
+
+.articles__card:focus-visible::before h5 {
+    color: #FFFFFF;
+}
+
+.articles__card:focus-visible::before p {
+    color: #FFFFFF;
+}
+
+.articles__card:active {
+    background-color: #0E3B6C;
+}
+
+.articles__card:active p {
+    color: #FFFFFF;
+}
+
+.articles__card:active h5 {
+    color: #FFFFFF;
 }
 
 .articles__item {
