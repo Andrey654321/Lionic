@@ -135,10 +135,10 @@ a{
 
 .hero {
     padding: 113px 0 134px 0;
-    background-image: url(../img/hero.jpeg); /* Разобраться */
-    background-repeat: no-repeat; /* Разобраться */
-    background-position: center right; /* Разобраться */
-    background-size: cover; /* Разобраться */
+    background-image: url(../img/hero.jpeg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
 }
 
 .hero__container{
@@ -211,6 +211,7 @@ a{
 
 .about__container {
     margin-top: 87px;
+    padding: 0;
 }
 
 .about__card {
@@ -226,19 +227,31 @@ a{
     background-color: #3172B9;
 }
 
+.about__card:active {
+    background-color: #0E3B6C;
+}
+
+.about__card:focus-visible {
+    background-color: #71A7E2;
+}
+
+.about__card:active svg rect,
 .about__card:hover svg rect {
     fill: #FFFFFF;
 }
 
+.about__card:active svg path,
 .about__card:hover svg path {
     fill: #FFFFFF;
 }
 
-.about__card:hover p {
+.about__card:active .about__card-text,
+.about__card:hover .about__card-text {
     color: #FFFFFF;
 }
 
-.about__card:hover h3 {
+.about__card:active .about__card-title,
+.about__card:hover .about__card-title {
     color: #FFFFFF;
 }
 
@@ -282,6 +295,13 @@ a{
     flex-direction: column;
 }
 
+.about__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .about__card-title {
     color: #1C1C1C;
     text-align: center;
@@ -313,13 +333,14 @@ a{
 }           
 
 .articles__card {
-    padding: 23px 160px 38px 200px;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
-    max-width: 210px;
     border-radius: 5px;
     border: 1px solid #E4E4E4;
     position: relative;
     cursor: pointer;
+    width: calc(100% / 2 - 30px);
 }
 
 .articles__card::before {
@@ -386,27 +407,35 @@ a{
 }
 
 .articles__card-img-building {
-    background-size: contain;
     background-image: url(../img/building.svg);
-    background-repeat: no-repeat;
 }
 
 .articles__card-img-computer {
-    background-size: contain;
     background-image: url(../img/computer.svg);
-    background-repeat: no-repeat;
 }
 
 .articles__card-img-books {
-    background-size: contain;
     background-image: url(../img/books.svg);
-    background-repeat: no-repeat;
 }
 
 .articles__card-img-panorama {
-    background-size: contain;
     background-image: url(../img/panorama.svg);
-    background-repeat: no-repeat;
+}
+
+.articles__card-img {
+    display: flex;
+    background-size: cover;
+    width: 170px;
+    height: 100%;
+}
+
+.articles__card-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #1c1c1c;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .articles__card-text {
@@ -414,6 +443,8 @@ a{
     font-size: 14px;
     line-height: 150%;
     color: #787878;
+    max-width: 210px;
+    margin: 0;
 }
 
 .articles__card-description {
@@ -421,11 +452,17 @@ a{
     font-size: 10px;
     line-height: 150%;
     color: #787878;
+    margin: 0;
+}
+
+.articles__card-content {
+    margin: 23px auto 38px 30px;
 }
 
 .clients {
     padding-bottom: 160px;
-    border-bottom: 1px solid #E4E4E4; 
+    border-bottom: 1px solid #DADADA;
+    margin-bottom: 57px;
 }
 
 .clients__title {
@@ -457,6 +494,7 @@ a{
     padding-bottom: 33px;
     border-bottom: 1px solid #E4E4E4;
     margin-bottom: 28px;
+    margin: 0;
 }
 
 .clients__card-title {
@@ -476,6 +514,110 @@ a{
 }
 
 .clients__name {
+    display: flex;
     padding: 0;
-    margin-left: 126px;
+    margin: 0;
+    margin-top: 28px;
+}
+
+.clients__content {
+    margin: 0;
+    margin-left: 17px;
+}
+
+.clients__card-img-john {
+    background-image: url(../img/John\ Armstrong.svg);
+}
+
+.clients__card-img-liza {
+    background-image: url(../img/Elizabeth\ Martin.svg);
+}
+
+.clients__card-img-robin {
+    background-image: url(../img/Robin\ Soutby.svg);
+}
+
+.clients__card-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+}
+
+.contacts {
+    padding-bottom: 160px;
+    border-bottom: 1px solid #DADADA;
+    margin-bottom: 87px;
+}
+
+.contacts__title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 130%;
+    color: #1c1c1c;
+    margin: 0;
+    margin-bottom: 109px;
+}
+
+.contacts__card-title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 180%;
+    color: #1c1c1c;
+    margin-bottom: 30px;
+}
+
+.contacts__card-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
+    max-width: 214px;
+    margin: 0;
+}
+
+.contacts__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts__card-visit {
+    margin: 0;
+    margin-right: 186px;
+}
+
+.contacts__card-call {
+    margin: 0;
+    margin-right: 279px;
+}
+
+.contacts__card-email {
+    margin: 0;
+}
+
+.contacts__card-img-location {
+    background-image: url(../img/location.svg);
+}
+
+.contacts__card-img-phone {
+    background-image: url(../img/phone.svg);
+}
+
+.contacts__card-img-mail {
+    background-image: url(../img/mail.svg);
+}
+
+.contacts__card-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 29px;
+    height: 29px;
+    margin: 0;
+    margin-bottom: 19px;
 }
